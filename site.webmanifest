@@ -1,0 +1,19 @@
+{
+    "name": "Smartphone Link",
+    "short_name": "smartphone-link",
+    "icons": [
+        {
+            "src": "img/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#E0FFFF",
+    "background_color": "#E0FFFF",
+    "display": "standalone"
+}

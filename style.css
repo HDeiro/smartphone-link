@@ -1,0 +1,107 @@
+:root {
+    --container-padding: 16px;
+
+    --interaction-height: 48px;
+    --interaction-border: none;
+    --interaction-border-radius: 4px;
+
+    --color-container-bg: lightcyan;
+    --color-txt: rgb(1, 80, 80);
+    --color-bg-cta: darkcyan;
+    --color-txt-cta: white;
+    --color-bg-cta-whatsapp: #25D366;
+    --color-txt-cta-whatsapp: #fff;
+    --color-bg-cta-phone: orange;
+    --color-txt-cta-phone: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-container-bg);
+    margin: 0; /* CSS Reset */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--container-padding);
+    height: 100svh;
+}
+
+input, button {
+    height: var(--interaction-height);
+    border-radius: var(--interaction-border-radius);
+    border: var(--interaction-border);
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+input {
+    padding: 4px 8px;
+}
+
+button {
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Phone Insertion */
+
+#generate-phone-link {
+    margin-top: 8px;
+    background-color: var(--color-bg-cta);
+    color: var(--color-txt-cta);
+}
+
+/* Phone Options */
+
+#has-phone button:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+#get-shareable-link, #generate-new {
+    background: var(--color-bg-cta);
+    color: var(--color-txt-cta);
+}
+
+#talk-on-phone {
+    background: var(--color-bg-cta-phone);
+    color: var(--color-txt-cta-phone);
+}
+
+#talk-on-whatsapp {
+    background: var(--color-bg-cta-whatsapp);
+    color: var(--color-txt-cta-whatsapp);
+}
+
+/* Header */
+
+#title, #subtitle {
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--color-txt)
+}
+
+#title {
+    margin: 0 0 8px 0;
+}
+
+#subtitle {
+    margin: 0 0 24px 0;
+}
+
+/* Utilitaries */
+
+.none {
+    display: none !important;
+}

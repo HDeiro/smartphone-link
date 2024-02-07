@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Link</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#E0FFFF">
+</head>
+<body>
+    <header>
+        <h1 id="title">Smartphone Link</h1>
+        <p id="subtitle">Quick access useful links based on your smartphone number</p>
+    </header>
+
+    <div class="container none" id="insert-phone">
+        <input type="tel" id="phone" placeholder="Add your phone">
+        <button id="generate-phone-link">Generate new link</button>
+    </div>
+
+    <div class="container none" id="has-phone">
+        <button id="generate-new">Generate new phone link</button>
+        <button id="get-shareable-link" class="none">Get shareable link</button>
+        <button id="talk-on-whatsapp">Talk on WhatsApp</button>
+        <button id="talk-on-phone">Talk on Phone</button>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
