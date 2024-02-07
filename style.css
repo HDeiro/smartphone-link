@@ -1,6 +1,8 @@
 :root {
     --container-padding: 16px;
 
+    --font-family: sans-serif;
+
     --interaction-height: 48px;
     --interaction-border: none;
     --interaction-border-radius: 4px;
@@ -36,7 +38,7 @@ input, button {
     border: var(--interaction-border);
     width: 100%;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: var(--font-family);
 }
 
 input {
@@ -45,6 +47,11 @@ input {
 
 button {
     font-weight: 600;
+}
+
+footer {
+    font-family: var(--font-family);
+    margin-top: 16px;
 }
 
 .container {
@@ -87,7 +94,7 @@ button {
 /* Header */
 
 #title, #subtitle {
-    font-family: sans-serif;
+    font-family: var(--font-family);
     text-align: center;
     color: var(--color-txt)
 }
