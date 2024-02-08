@@ -33,7 +33,7 @@ $('#generate-phone-link').addEventListener('click', ({target}) => {
         return;
     }
 
-    phoneNumber = value;
+    phoneNumber = value.replace(/[\(\)\-\s]/g, '');;
 
     containers.insertPhone.classList.add('none');
     containers.hasPhone.classList.remove('none');
