@@ -76,7 +76,7 @@ footer {
     margin-bottom: 8px;
 }
 
-#get-shareable-link, #generate-new {
+#get-shareable-link, #generate-new, #copy-phone {
     background: var(--color-bg-cta);
     color: var(--color-txt-cta);
 }

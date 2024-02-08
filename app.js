@@ -10,6 +10,7 @@ const ctas = {
     talkOnWhatsApp:   $('#talk-on-whatsapp'),
     talkOnPhone:      $('#talk-on-phone'),
     generateNew:      $('#generate-new'),
+    copyPhone:        $('#copy-phone'),
 }
 
 // Get Query Param
@@ -61,6 +62,11 @@ ctas.talkOnPhone.addEventListener('click', () => window.location.href = `tel:${p
 
 ctas.generateNew.addEventListener('click', () => window.location.href = location.origin);
 
+ctas.copyPhone.addEventListener('click', 
+    () => navigator.clipboard.writeText(phoneNumber)
+        .then(() => alert('Phone number copied to your clipboard'))
+        .catch(() => alert('There was an error while copying the phone number'))
+)
 
 
 
